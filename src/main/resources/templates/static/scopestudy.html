@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>angualjs scope 学习</title>
+</head>
+<link rel="stylesheet" th:href="@{/css/semantic.min.css}"/>
+<script th:src="@{/js/jquery-1.11.1.min.js}"></script>
+<script th:src="@{/js/semantic.min.js}"></script>
+<!--<script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>-->
+<!--<link th:href="@{/static/bootstrap/css/bootstrap.css}" rel="stylesheet"/>-->
+<!--上面的坑踩了一会  关于静态文件引入的实践   记住 thymeleaf 语法引入本地静态文件的使用 -->
+<script th:src="@{/js/angular.min.js}"></script>
+<body>
+
+<h3>
+    Scope 概述
+    AngularJS 应用组成如下：
+    View(视图), 即 HTML。
+    Model(模型), 当前视图中可用的数据。
+    Controller(控制器), 即 JavaScript 函数，可以添加或修改属性。
+    作用域有什么
+    作用域提供了 ($watch) 方法监听数据模型的变化
+    作用域提供了 ($apply) 方法把不是由Angular触发的数据模型的改变引入Angular的控制范围内（如控制器，服务，及Angular事件处理器等）
+    作用域提供了基于原型链继承其父作用域属性的机制，就算是嵌套于独立的应用组件中的作用域也可以访问共享的数据模型（这个涉及到指令间嵌套时作用域的几种模式）
+    作用域提供了 表达式 的执行环境，比如像 {{username}} 这个表达式，必须得是在一个拥有属性这个属性的作用域中执行才会有意义，也就是说，作用域中可能会像这样 scope.username 或是 $scope.username，至于有没有 $ 符号，看你是在哪里访问作用域了
+    作用域作为数据模型使用
+    作用域是Web应用的控制器和视图之间的粘结剂。在Angular中，最直观的表现是：在自定义指令中，处在模版的 链接(linking) 阶段时， 指令(directive)会设置一个 $watch 函数监听着作用域中各表达式（注：这个过程是隐式的）。这个 $watch 允许指令在作用域中的属性变化时收到通知， 进而让指令能够根据这个改变来对DOM进行重新渲染，以便更新已改变的属性值（注：属性值就是scope对象中的属性，也就是数据模型）。
+    其实，不止上面所说的指令拥有指向作用域的引用，控制器中也有（注：可以理解为控制器与指令均能引用到与它们相对应的DOM结构所处的作用域）。 但是控制器与指令是相互分离的，而且它们与视图之间也是分离的，这样的分离，或者说耦合度低，可以大大提高对应用进行测试的工作效率。
+    注：其实可以很简单地理解为有以下两个链条关系：
+    控制器 --> 作用域 --> 视图（DOM）
+    指令 --> 作用域 --> 视图（DOM）
+</h3>
+
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+    <input ng-model="name"/>
+    <h1>{{greeting}}}</h1>
+    <button ng-click='sayHello()'>点我</button>
+</div>
+
+
+
+<script>
+    var app = angular.module('myApp',[]);
+    app.controller('myCtrl',function ($scope) {
+        $scope.name="licslan";
+        $scope.sayHello = function () {
+            $scope.greeting = 'hello' + $scope.name + '!';
+        }
+    })
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
