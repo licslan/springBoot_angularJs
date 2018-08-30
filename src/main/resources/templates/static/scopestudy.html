@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <title>angualjs scope 学习</title>
 </head>
 <link rel="stylesheet" th:href="@{/css/semantic.min.css}"/>
@@ -33,11 +33,16 @@
 </h3>
 
 
-<div ng-app="myApp" ng-controller="myCtrl">
+<!--<div ng-app="myApp" ng-controller="myCtrl" ng-init="name-hwl='hwl'">-->
+<div ng-app=""  ng-init="hwl='hwl'">
 
     <input ng-model="name"/>
     <h1>{{greeting}}}</h1>
     <button ng-click='sayHello()'>点我</button>
+
+    <p>在输入框中尝试输入：</p>
+    <p>姓名：<input type="text" ng-model="hwl"/></p>
+    <p>你的输入为：{{ hwl }}</p>
 </div>
 
 

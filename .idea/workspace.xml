@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f995fed-bb51-43e8-9769-a41f93f7ae5e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/static/scopestudy.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/springboot/test/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/springboot/test/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/static/scopestudy.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/static/scopestudy.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,16 +24,18 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="947" />
-          <entry key="java" value="66" />
+          <entry key="html" value="1065" />
+          <entry key="java" value="87" />
           <entry key="properties" value="42" />
+          <entry key="txt" value="35" />
           <entry key="xml" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="947" />
-          <entry key="JAVA" value="66" />
+          <entry key="HTML" value="1065" />
+          <entry key="JAVA" value="87" />
+          <entry key="PLAIN_TEXT" value="35" />
           <entry key="Properties" value="42" />
           <entry key="XML" value="40" />
         </counts>
@@ -42,7 +44,7 @@
         <counts>
           <entry key="css" value="4" />
           <entry key="html" value="13" />
-          <entry key="java" value="7" />
+          <entry key="java" value="8" />
           <entry key="js" value="6" />
           <entry key="properties" value="3" />
           <entry key="sql" value="1" />
@@ -52,7 +54,7 @@
         <counts>
           <entry key="CSS" value="4" />
           <entry key="HTML" value="13" />
-          <entry key="JAVA" value="7" />
+          <entry key="JAVA" value="8" />
           <entry key="JavaScript" value="6" />
           <entry key="Properties" value="3" />
           <entry key="SQL" value="1" />
@@ -71,20 +73,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/static/scopestudy.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="228">
+              <caret line="44" column="26" lean-forward="true" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/springboot/test/MainController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="171">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -123,11 +137,11 @@
         <option value="$PROJECT_DIR$/src/main/java/springboot/test/App.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/hello.html" />
-        <option value="$PROJECT_DIR$/src/main/java/springboot/test/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/static/hello.html" />
         <option value="$PROJECT_DIR$/src/main/java/springboot/test/OrderDao.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/static/scopestudy.html" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/springboot/test/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/static/scopestudy.html" />
       </list>
     </option>
   </component>
@@ -170,8 +184,8 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="166" />
-    <option name="y" value="50" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
     <option name="width" value="1683" />
     <option name="height" value="735" />
   </component>
@@ -205,7 +219,15 @@
               <item name="licslan" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="licslan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="licslan" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="licslan" type="b2602c69:ProjectViewProjectNode" />
@@ -213,7 +235,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="licslan" type="b2602c69:ProjectViewProjectNode" />
@@ -244,7 +265,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535625128719" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535626383829" />
     <property name="last_opened_file_path" value="D:/projectDemo/springCloud" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -312,12 +333,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1535608313150</updated>
-      <workItem from="1535608317827" duration="12073000" />
+      <workItem from="1535608317827" duration="13385000" />
     </task>
+    <task id="LOCAL-00001" summary="add scopestudy.html">
+      <created>1535625217922</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1535625217922</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12073000" />
+    <option name="totallyTimeSpent" value="13385000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -329,19 +358,19 @@
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Web" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2922252" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17627347" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Spring" weight="0.32991204" />
       <window_info anchor="bottom" id="Terminal" weight="0.32991204" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.21380697" side_tool="true" visible="true" weight="0.47577092" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.21447721" side_tool="true" visible="true" weight="0.15271659" />
       <window_info anchor="bottom" id="Java Enterprise" weight="0.32991204" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Messages" weight="0.47653958" />
+      <window_info anchor="bottom" id="Messages" sideWeight="0.4992236" weight="0.4709977" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.786193" visible="true" weight="0.47577092" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.78552276" visible="true" weight="0.15271659" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49932975" weight="0.20381232" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -363,6 +392,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add scopestudy.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="add scopestudy.html" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -418,16 +451,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/test/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/js/semantic.min.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -467,6 +490,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/static/hello.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -474,17 +504,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/static/scopestudy.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/springboot/test/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="532">
+          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/static/scopestudy.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="228">
+          <caret line="44" column="26" lean-forward="true" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
         </state>
       </provider>
     </entry>

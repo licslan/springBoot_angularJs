@@ -29,6 +29,11 @@ public class MainController {
         return "hello";
     }
 
+    @GetMapping("/xxxx")
+    public String scopestudy() {
+        return "static/scopestudy";
+    }
+
     @GetMapping("/xxx")
     public String helloStatic() {
         return "static/hello";
