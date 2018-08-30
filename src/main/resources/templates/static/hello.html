@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Integrating spring boot+JDBC+angularJs</title>
+</head>
+<link rel="stylesheet" th:href="@{/css/semantic.min.css}"/>
+<script th:src="@{/js/jquery-1.11.1.min.js}"></script>
+<script th:src="@{/js/semantic.min.js}"></script>
+<!--<script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>-->
+<!--<link th:href="@{/static/bootstrap/css/bootstrap.css}" rel="stylesheet"/>-->
+<!--上面的坑踩了一会  关于静态文件引入的实践   记住 thymeleaf 语法引入本地静态文件的使用 -->
+<script th:src="@{/js/angular.min.js}"></script>
+<body>
+<h1>hello world  this is static dir !</h1>
+<div onclick="test()">点击</div>
+<!--<div ng-app="">
+    <p>我的第一个表达式: {{ 5 + 5 }}</p>
+</div>-->
+
+<div ng-app="" ng-init="a=1;b=5">
+    <p>total: {{ a*b }}</p>
+    <form>
+        Name:<input type="text" ng-model="name"/>
+    </form>
+    <h1>you entered:{{name}}</h1>
+</div>
+
+<script>
+    function test () {
+        alert("hello world this is a testing ！")
+    }
+ var app= angular.model('myapp',[]);
+    app.controller('xx',function ($scope) {
+        $scope.name="licslan";
+    })
+</script>
+</body>
+</html>
