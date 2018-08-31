@@ -39,6 +39,11 @@ public class MainController {
         return "static/hello";
     }
 
+    @GetMapping("/ang")
+    public String angularStatic() {
+        return "static/angularJsStudy";
+    }
+
     @PostMapping("/save")
     public @ResponseBody
     Map<String, Object> save(@RequestBody Order order) {
